@@ -16,7 +16,11 @@
  const outputAmount= parseFloat(document.getElementById("output-amount").value);
 
  button.setAttribute("disabled",true); 
+ 
+  if(document.getElementById(input-amount).value.length !=0)
+{
   await debuke.topUp(inputAmount);
+}
   const currentAmount = await debuke.show();
   document.getElementById("value").innerText=Math.round(currentAmount*100)/100;
   document.getElementById("input-amount").value="";
